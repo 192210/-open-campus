@@ -36,7 +36,36 @@
       </div><!-- /.footer-wrapper -->
     </footer>
 
-    <script type="javascript" src="keizidan.js"></script>
+    <script type="text/javascript">
+    // メインコンテンツをヘッダーの高さ分だけずらす
+var headerHeight = $('header').outerHeight();
+$('main').css('padding-top', headerHeight + 'px');
+$('#menu').css('margin-top', headerHeight + 'px');
+
+// MENUボタンがクリックされたときの処理
+$('#menu_btn').on('click', function(){
+  if($(this).hasClass('active')) {
+    $(this).removeClass('active');
+    $(this).text('MENU');
+    $('#menu').removeClass('open');
+    $('.menu-background').removeClass('open');
+  } else {
+    $(this).addClass('active');
+    $(this).text('CLOSE');
+    $('#menu').addClass('open');
+    $('.menu-background').addClass('open');
+  }
+});
+
+// メニューの背景がクリックされたときの処理
+$('.menu-background').on('click', function(){
+  if($(this).hasClass('open')) {
+    $(this).removeClass('open');
+    $('#menu_btn').removeClass('active').text('MENU');
+    $('#menu').removeClass('open');
+  }
+});
+    </script>
     <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   </body>
 
