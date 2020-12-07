@@ -1,9 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--https://www.webcreatorbox.com/tech/slide-menu-->
+<html>
+    
+    <header>
+        <link rel="stylesheet" href="calor.css">
+        <meta charset="UTF-8">
+        <button class="btn-menu">メニュー</button>
+        <nav>
+          <ul>
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#">サービス概要</a></li>
+            <li><a href="#">実績紹介</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </header>
+      <body>
+          <script>
+                const btn = document.querySelector('.btn-menu');
+                const nav = document.querySelector('nav');
+ 
+                btn.addEventListener('click', () => {
+                nav.classList.toggle('open-menu')
+                if (btn.innerHTML === 'メニュー') {
+                btn.innerHTML = '閉じる';
+                } else {
+                btn.innerHTML = 'メニュー';
+                }
+                });
+          </script>
+
+      </body>
+</html>
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>NFC-Data</title>
+   <title>掲示板</title>
 
    <!-- The core Firebase JS SDK is always required and must be listed first-->
 <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
@@ -33,7 +68,7 @@
 
 </script>
 
-   <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" href="./message.css">
 </head>
 <body>
    <h1掲示板</h1>
@@ -51,6 +86,6 @@
        <hr>
        <div id="output"></div>
    </div>
-<script src="./app.js"></script>
+<script src="./message.js"></script>
 </body>
 </html>
