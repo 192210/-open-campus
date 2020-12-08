@@ -68,24 +68,27 @@
 
 </script>
 
-   <link rel="stylesheet" href="./message.css">
+   <link rel="stylesheet" href="message.css">
 </head>
 <body>
    <h1掲示板</h1>
-   <div>
+   <div class="in">
        <div>
-           nfcId<br><input type="text" id="nfcId">
+           ブース名<br><input type="text" id="nfcId">
        </div>
        <br>
        <div>
-          prace<br><input type="text" id="prace">
-        </ul>
-           <br>
-           <button id="send">send</button>
+          メッセージ<br><textarea name="text" id="prace">
+            </textarea>
        </div>
-       <hr>
-       <div id="output"></div>
+        </ul>
+        <br>
+        <div>
+          <button id="send">送信</button>
+          <hr>
+        </div>
    </div>
+   <div id="output"></div>
 <script src="./message.js"></script>
 </body>
 </html>

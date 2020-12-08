@@ -22,8 +22,8 @@ database.ref(room).on("child_added", function(data) {
    const v = data.val();
    const k = data.key;
    let str = "";
-   str += '<div class="name">ブース：'+v.name+'</div>';
+   str += '<div class="nfcId">ブース名：'+v.nfcId+'</div>';
    str += '<div class="text">日時：'+v.date+'</div>';
-   str += '<div class="text">メッセージ：'+v.message+'</div><hr>';
+   str += '<div class="text">内容：'+v.message+'</div><hr>';
    output.innerHTML += str;
 });
