@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--https://www.webcreatorbox.com/tech/slide-menu-->
+<html>
+    
+    <header>
+        <link rel="stylesheet" href="list.css">
+        <meta charset="UTF-8">
+        <button class="btn-menu">メニュー</button>
+        <nav>
+          <ul>
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#">サービス概要</a></li>
+            <li><a href="#">実績紹介</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </header>
+      <body>
+          <script>
+                const btn = document.querySelector('.btn-menu');
+                const nav = document.querySelector('nav');
+ 
+                btn.addEventListener('click', () => {
+                nav.classList.toggle('open-menu')
+                if (btn.innerHTML === 'メニュー') {
+                btn.innerHTML = '閉じる';
+                } else {
+                btn.innerHTML = 'メニュー';
+                }
+                });
+          </script>
+         
+         
+          <table>
+            <p></p>
+            <tr><th>ブース名</th> <th>午前</th> <th>午後</th><th>滞在時間</th></tr>
+
+            <tr><td>ゲーム</td> <td>19</td> <td>11</td> <td>1</td></tr>
+        
+            <tr><td>CG</td> <td>19</td> <td>11</td> <td>1</td></tr>
+        
+            <tr><td>WEB</td> <td>19</td> <td>11</td> <td>1</td></tr>
+        
+            <tr> <td>CAD</td> <td>19</td> <td>11</td> <td>1</td></tr>
+        
+            <tr><td>IT</td> <td>19</td> <td>11</td> <td>1</td></tr>
+          </table>
+                   
+        </body>
+   </script>    
+ </html> 
+</html>
