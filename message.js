@@ -8,10 +8,11 @@ const output = document.getElementById("output");
 //送信処理
 send.addEventListener('click', function() {
    var now = new Date();
+   var mouth = now.getMonth() + 1;
    database.ref(room).push({
        nfcId:nfcId.value,
        prace: prace.value,
-       date: now.getFullYear() + '年' + now.getMonth()+1 + '月' + now.getDate() + '日' + now.getHours() + '時' + now.getMinutes() + '分'
+       date: now.getFullYear() + '年' + mouth + '月' + now.getDate() + '日' + now.getHours() + '時' + now.getMinutes() + '分'
    });
    prace.value="";
    nfcId.value="";
