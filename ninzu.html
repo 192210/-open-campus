@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--https://www.webcreatorbox.com/tech/slide-menu-->
+<html>
+    
+    <header>
+        <link rel="stylesheet" href="ninzu.css">
+        <meta charset="UTF-8">
+        <button class="btn-menu">メニュー</button>
+        <nav>
+          <ul>
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#">サービス概要</a></li>
+            <li><a href="#">実績紹介</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </header>
+      <body>
+          <script>
+                const btn = document.querySelector('.btn-menu');
+                const nav = document.querySelector('nav');
+ 
+                btn.addEventListener('click', () => {
+                nav.classList.toggle('open-menu')
+                if (btn.innerHTML === 'メニュー') {
+                btn.innerHTML = '閉じる';
+                } else {
+                btn.innerHTML = 'メニュー';
+                }
+                });
+          </script>
+          <div class="wrapper">
+            <section class="main">
+                <h1>メインコンテンツ</h1>
+                <div class="archive">
+                    <div class="one">
+                        <button id="gemu" style="WIDTH: 100px; HEIGHT: 100px">ゲーム</button>
+                        <button id="cg" style="WIDTH: 100px; HEIGHT: 100px">CG</button>
+                        <button id="web" style="WIDTH: 100px; HEIGHT: 100px">WEB</button>  
+                    </div>
+                    <div class="two">
+                        <button id="cad" style="WIDTH: 100px; HEIGHT: 100px">CAD</button>
+                        <button id="it" style="WIDTH: 100px; HEIGHT: 100px">IT</button>  
+                        <button id="sp" style="WIDTH: 100px; HEIGHT: 100px">スペシャル</button>  
+                    </div>
+                </div>
+            </section>
+           
+        </div>
+      </body>
+</html>
+
+</div>
+</html>
