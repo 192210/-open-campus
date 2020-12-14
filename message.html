@@ -70,11 +70,12 @@
 
    <link rel="stylesheet" href="message.css">
 </head>
+<main>
 <div class="wrapper">
-  <section class="left">
+  <div class="left">
     <p>ブース名<br>
      <form type="text" id="nfcId">
-       <select id="listBox">
+       <select id="nfcId">
          <option>ゲーム</option>
          <option>CG</option>
          <option>WEB</option>
@@ -83,16 +84,16 @@
          <option>スペシャル</option>
          <option>運営</option>
        </select>
-     </form>
-     <p>メッセージ<br>
-      <textarea type="text" id="prace"></textarea>
-     <p><button id="send">送信</button></p>
- 
-
-    <!--
-   <section id="output">
-    <script src="./message.js"></script>
-   </section>
-   -->
+         <p>メッセージ<br>
+           <textarea type="text" id="prace"></textarea>
+         <p><button id="send">送信</button></p>  
+  </div>
 </div>
+<div class="main">
+       <div id="output">
+        <script src="./message.js"></script>
+       </div>
+</div>
+
+</main>
 </html>
