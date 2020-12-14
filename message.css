@@ -1,91 +1,116 @@
 /* 基本装飾 */
 header {
-   background: #333;
-   padding: .5rem;
-   text-align: right;
- }
- a {
-   color: #fff;
-   text-decoration: none;
-   white-space: nowrap;
- }
- li {
-   margin: 2rem 0;
- }
-  
- /* ボタン */
- .btn-menu {
-   border: 1px solid #999;
-   background: transparent;
-   color: #fff;
-   padding: .5rem 1rem;
-   font-size: 1rem;
-   cursor: pointer;
-   line-height: 1;
- }
-  
- /* メニュー */
- nav {
-   background: #0bd;
-   position: absolute;
-   z-index: 1;
-   top: 5rem;
-   right: 0;
-   overflow-x: hidden;
+  background: #333;
+  padding: .5rem;
+  text-align: right;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+li {
+  margin: 2rem 0;
+}
+ 
+/* ボタン */
+.btn-menu {
+  border: 1px solid #999;
+  background: transparent;
+  color: #fff;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  line-height: 1;
+}
+ 
+/* メニュー */
+nav {
+  background: #0bd;
+  position: absolute;
+  z-index: 1;
+  top: 5rem;
+  right: 0;
+  overflow-x: hidden;
+  text-align: center;
+  width: 0;
+  transition: .5s;
+}
+
+/*メニューを開いたとき*/
+nav.open-menu{
+    width: 30%;
+    height: 200%;
+}
+
+
+h1 {
+   color: coral;
    text-align: center;
-   width: 0;
-   transition: .5s;
- }
-
- /*メニューを開いたとき*/
- nav.open-menu{
-     width: 30%;
-     height: 200%;
- }
-
- 
- h1 {
-    color: coral;
-    text-align: center;
- }
- 
- div {
-    text-align: center;
- }
- 
- textarea {
-    vertical-align:top;
- }
-  #contents {
-    display:inline-block;
-	position:relative;
-	/*background-color:white;*/
-	border-radius:10px;
-	padding:10px;
-	margin:0 0 0 10px;
-  
- }
-
- .in {
-  width: 80%;
-  display: flex;
-  margin: 20px auto;
-  justify-content: center;
 }
 
-.left{
-  padding: 20px;
+div {
+   text-align: center;
 }
 
-.output{
-  background: pink;
-  width: 60%;
-  margin-right: 20px;
+ #contents {
+   display:inline-block;
+ position:relative;
+ /*background-color:white;*/
+ border-radius:10px;
+ padding:10px;
+ margin:0 0 0 10px;
+ 
 }
+
+body{
+  font-size: 20px;
+}
+
+/* 2カラムサイトにする */
+.wrapper {
+ width: 80%;
+ display: flex;
+ margin: 20px auto;
+}
+
+.main, .side {
+ padding: 20px;
+}
+
+.left {
+ background: rgb(93, 204, 248);
+ width: 30%;
+ margin-right: 15px;
+ margin-top: 20px;
+}
+
+/*セレクトボックス*/
+select{
+  font-size: 20px;
+}
+
+/*メッセージ*/
+input{
+  font-size: 20px;
+  height: 100px;
+}
+
+button{
+  font-size: 20px;
+}
+
+/*
+.output {
+ background: pink;
+ width: 70%;
+ margin-top: 20px;
+}
+*/
 
 .clearfix:after{
-  content : '';
-  display : block;
-  clear : both;
-  height:0; 
+ content : '';
+ display : block;
+ clear : both;
+ height:0; 
 }
