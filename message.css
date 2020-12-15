@@ -95,6 +95,14 @@ button{
   font-size: 25px;;
 }
 
+/*メッセージ*/
+textarea{
+  resize: vertical;
+  resize: horizontal;
+  width:300px;
+  height:200px;
+  font-size: 100%;
+}
 .clearfix:after{
  content : '';
  display : block;

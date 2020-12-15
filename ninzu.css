@@ -67,21 +67,3 @@ header {
     font-size: 15px;
   }
 
-
-/*ボタン */
-button{
-    font-size: 15px;
-}
-.wrapper {
-    width: 80%;
-    display: flex;
-    margin: 20px auto;
-    justify-content: center;
-}
-.one{
-    background: pink;
-}
-.two{
-    background: pink;
-
-  }
