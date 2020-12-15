@@ -67,3 +67,14 @@ header {
     font-size: 15px;
   }
 
+/*３カラム*/
+.column3 div{
+  width: calc(33.33% - 20px);
+  float: left;
+}
+.column3 .one{
+  margin-right: 20px;
+}
+.column3 .two{
+  margin-right: 20px;
+}
