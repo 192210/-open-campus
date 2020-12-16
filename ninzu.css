@@ -69,12 +69,40 @@ header {
 
 /*３カラム*/
 .column3 div{
-  width: calc(33.33% - 20px);
+  width: calc(25% - 20px);
   float: left;
+  left: 50%;
+  margin-left: 10px;
 }
 .column3 .one{
   margin-right: 20px;
 }
 .column3 .two{
   margin-right: 20px;
+}
+
+/*人数表示*/
+.one .game{
+  height: 200px;
+  width: 300px;
+}
+.one .cad{
+  height: 200px;
+  width: 300px;
+}
+.two .cg{
+  height: 200px;
+  width: 300px;
+}
+.two .it{
+  height: 200px;
+  width: 300px;
+}
+.three .web{
+  height: 200px;
+  width: 300px;
+}
+.three .sp{
+  height: 200px;
+  width: 300px;
 }
