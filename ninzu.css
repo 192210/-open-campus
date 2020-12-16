@@ -69,10 +69,11 @@ header {
 
 /*３カラム*/
 .column3 div{
-  width: calc(25% - 20px);
+  width: calc(25% - 30px);
   float: left;
   left: 50%;
-  margin-left: 10px;
+  margin-left: 10px 
+
 }
 .column3 .one{
   margin-right: 20px;
