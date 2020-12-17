@@ -69,11 +69,15 @@ header {
 
 /*３カラム*/
 .column3 div{
-  width: calc(25% - 30px);
+  width: calc(25% - 35px);
   float: left;
   left: 50%;
   margin-left: 10px 
 
+}
+.column3 .s{
+  width: 1000px;
+  height: 30px;
 }
 .column3 .one{
   margin-right: 20px;
@@ -85,25 +89,32 @@ header {
 /*人数表示*/
 .one .game{
   height: 200px;
-  width: 300px;
+  width: 250px;
 }
 .one .cad{
   height: 200px;
-  width: 300px;
+  width: 250px;
 }
 .two .cg{
   height: 200px;
-  width: 300px;
+  width: 250px;
 }
 .two .it{
   height: 200px;
-  width: 300px;
+  width: 250px;
 }
 .three .web{
   height: 200px;
-  width: 300px;
+  width: 250px;
 }
 .three .sp{
   height: 200px;
-  width: 300px;
+  width: 250px;
+}
+
+.img{
+  position: relative;
+  background: #95d5d1;
+  width: 100000000px;
+  height: 100px;
 }
