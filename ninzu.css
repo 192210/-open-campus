@@ -68,22 +68,22 @@ header {
   }
 
 /*３カラム*/
-.column3 div{
-  width: calc(25% - 35px);
-  float: left;
-  left: 50%;
-  margin-left: 10px 
-
-}
 .column3 .s{
   width: 1000px;
   height: 30px;
 }
+.column3 div{
+  display: inline-block;
+}
 .column3 .one{
   margin-right: 20px;
+  margin-left: 20px;
 }
 .column3 .two{
   margin-right: 20px;
+}
+.column3 .three{
+    margin-right: 20px;
 }
 
 /*人数表示*/
@@ -111,10 +111,31 @@ header {
   height: 200px;
   width: 250px;
 }
-
-.img{
+/*吹き出し*/
+.balloon {
   position: relative;
-  background: #95d5d1;
-  width: 100000000px;
-  height: 100px;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 7px 10px;
+  width: 200px;
+  height: 50px;
+  color: #555;
+  font-size: 16px;
+  background: #e0edff;
+  border-radius: 15px;
+}
+
+.balloon:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top: 15px solid #e0edff;
+}
+
+.balloon p {
+  margin: 0;
+  padding: 0;
 }
