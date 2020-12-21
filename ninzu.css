@@ -67,50 +67,24 @@ header {
     font-size: 15px;
   }
 
-/*３カラム*/
-.column3 .s{
-  width: 1000px;
-  height: 30px;
+  /*人数*/
+  .post_li {
+    height: 200px;
+    width: 200px;
+    margin: 0 0 60px;
+    background-color: #fff;
 }
-.column3 div{
-  display: inline-block;
+.center{
+  display: flex;
+  justify-content: space-evenly;
 }
-.column3 .one{
-  margin-right: 20px;
-  margin-left: 20px;
-}
-.column3 .two{
-  margin-right: 20px;
-}
-.column3 .three{
-    margin-right: 20px;
+h3{
+  color: #364e96;/*文字色*/
+  padding: 0.5em 0;/*上下の余白*/
+  border-top: solid 3px #364e96;/*上線*/
+  border-bottom: solid 3px #364e96;/*下線*/
 }
 
-/*人数表示*/
-.one .game{
-  height: 200px;
-  width: 250px;
-}
-.one .cad{
-  height: 200px;
-  width: 250px;
-}
-.two .cg{
-  height: 200px;
-  width: 250px;
-}
-.two .it{
-  height: 200px;
-  width: 250px;
-}
-.three .web{
-  height: 200px;
-  width: 250px;
-}
-.three .sp{
-  height: 200px;
-  width: 250px;
-}
 /*吹き出し*/
 .balloon {
   position: relative;
