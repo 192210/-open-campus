@@ -1,44 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--https://www.webcreatorbox.com/tech/slide-menu-->
 <html>
-    
-    <header>
-        <link rel="stylesheet" href="calor.css">
-        <meta charset="UTF-8">
-        <button class="btn-menu">メニュー</button>
-        <nav>
-          <ul>
-            <li><a href="#">ホーム</a></li>
-            <li><a href="#">サービス概要</a></li>
-            <li><a href="#">実績紹介</a></li>
-            <li><a href="#">お問い合わせ</a></li>
-          </ul>
-        </nav>
-      </header>
-      <body>
-          <script>
-                const btn = document.querySelector('.btn-menu');
-                const nav = document.querySelector('nav');
- 
-                btn.addEventListener('click', () => {
-                nav.classList.toggle('open-menu')
-                if (btn.innerHTML === 'メニュー') {
-                btn.innerHTML = '閉じる';
-                } else {
-                btn.innerHTML = 'メニュー';
-                }
-                });
-          </script>
-
-      </body>
+  <header>
+    <link rel="stylesheet" href="ninzu.css">
+    <meta charset="UTF-8">
+    <h2><a>Ncanpass</a></h2>
+    <ul class="menu">
+      <li><a href="/Users/s192210.TSITCL/-open-campus/ninzu.html">ブース</a></li>
+      <li><a  href="/Users/s192210.TSITCL/-open-campus/message.html">チャット</a></li>
+      <li><a  href="#">スキャン</a></li>
+      <li><a  href="#">集計</a></li>
+    </ul>
+</header>
 </html>
 
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>掲示板</title>
+   <title>チャット</title>
 
    <!-- The core Firebase JS SDK is always required and must be listed first-->
 <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
@@ -84,7 +64,7 @@
          <option>運営</option>
        </select>
          <p>メッセージ<br>
-           <textarea type="text" id="prace"></textarea>
+           <textarea type="text" id="prace" ></textarea>
          <p><button id="send">送信</button></p>  
   </div>
 </div>
