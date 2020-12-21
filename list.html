@@ -1,38 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--https://www.webcreatorbox.com/tech/slide-menu-->
+
 <html>
     
     <header>
-        <link rel="stylesheet" href="list.css">
-        <meta charset="UTF-8">
-        <button class="btn-menu">メニュー</button>
-        <nav>
-          <ul>
-            <li><a href="#">ホーム</a></li>
-            <li><a href="#">サービス概要</a></li>
-            <li><a href="#">実績紹介</a></li>
-            <li><a href="#">お問い合わせ</a></li>
-          </ul>
-        </nav>
+      <link rel="stylesheet" href="ninzu.css">
+      <meta charset="UTF-8">
+      <h2><a>Ncanpass</a></h2>
+      <ul class="menu">
+        <li><a href="/Users/s192210.TSITCL/-open-campus/ninzu.html">ブース</a></li>
+        <li><a  href="/Users/s192210.TSITCL/-open-campus/message.html">チャット</a></li>
+        <li><a  href="#">スキャン</a></li>
+        <li><a  href="s192210.TSITCL/-open-campus/list.html">集計</a></li>
+      </ul>
       </header>
       <body>
-          <script>
-                const btn = document.querySelector('.btn-menu');
-                const nav = document.querySelector('nav');
- 
-                btn.addEventListener('click', () => {
-                nav.classList.toggle('open-menu')
-                if (btn.innerHTML === 'メニュー') {
-                btn.innerHTML = '閉じる';
-                } else {
-                btn.innerHTML = 'メニュー';
-                }
-                });
-          </script>
-         
-         
           <table>
             <p></p>
             <tr><th>ブース名</th> <th>午前</th> <th>午後</th><th>滞在時間</th></tr>
